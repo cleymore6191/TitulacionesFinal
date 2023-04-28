@@ -30,9 +30,9 @@
 
     <!--Tabla donde apareceran los alumnos registrados-->
 
-<?php
-$link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
-?>
+    <?php
+    $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
+    ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -48,17 +48,17 @@ $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($link->query("SELECT * FROM datos_alumno") as $row){?>
-                            <tr>
-                                <td><?php echo $row['No_control'] ?></td>
-                                <td><?php echo $row['Nombre'] ?></td>
-                                <td><?php echo $row['Apellidos'] ?></td>
-                                <td><?php echo $row['Carrera'] ?></td>
-                                <td>
-                                    <button>Ver datos generales</button>
-                                    <button>ver expediente</button>
-                                </td>
-                            </tr>
+                            <?php foreach ($link->query("SELECT * FROM datos_alumno") as $row) { ?>
+                                <tr>
+                                    <td><?php echo $row['No_control'] ?></td>
+                                    <td><?php echo $row['Nombre'] ?></td>
+                                    <td><?php echo $row['Apellidos'] ?></td>
+                                    <td><?php echo $row['Carrera'] ?></td>
+                                    <td>
+                                        <button onclick="detailByStudent($row['No_control'])">Ver datos generales</button>
+                                        <button>ver expediente</button>
+                                    </td>
+                                </tr>
                             <?php } ?>
                         </tbody>
                     </table>
@@ -75,6 +75,8 @@ $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
     <!--Datatable js-->
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/tabla.js"></script>
+    <script type="text/javascript" src="assets/js/detalleProcesos.js"></script>
+
 </body>
 
 </html>
