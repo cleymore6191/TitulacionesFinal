@@ -17,39 +17,39 @@
 
     <form action="php/insertar_datos.php" method="POST">
         <div class="formulario">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
         </div>
 
         <div class="formulario">
-        <label for="apellido">Apellidos</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos" required>
+            <label for="apellido">Apellidos</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos" required>
         </div>
 
         <div class="formulario">
-        <label for="numero_control">Numero de control</label>
-        <input type="text" name="numero_control" id="numero_control" placeholder="Escribe tu numero de control" required>
+            <label for="numero_control">Numero de control</label>
+            <input type="text" name="numero_control" id="numero_control" placeholder="Escribe tu numero de control" required>
         </div>
 
         <div class="formulario">
-        <label for="Carrera">Carrera</label>
-        <select name="carrera" id="carrera">
-            <option value=""></option>
-            <option value="ISC">ISC</option>
-            <option value="IME">IME</option>
-            <option value="IGE">IGE</option>
-            <option value="IIN">IIN</option>
-        </select required>
+            <label for="Carrera">Carrera</label>
+            <select name="carrera" id="carrera">
+                <option value=""></option>
+                <option value="ISC">ISC</option>
+                <option value="IME">IME</option>
+                <option value="IGE">IGE</option>
+                <option value="IIN">IIN</option>
+            </select required>
         </div>
 
         <div class="formulario">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="Escribe tu correo institucional" required>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Escribe tu correo institucional" required>
         </div>
 
         <div class="formulario">
-        <label for="telefono">Telefono</label>
-        <input type="text" name="telefono" id="telefono" placeholder="Escribe tu numero de telefono" required>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Escribe tu numero de telefono" required>
         </div>
 
         <p class="nota">
@@ -61,22 +61,22 @@
         </p>
 
         <div class="formulario">
-        <label for="trabajo">Trabajas en alguna empresa</label>
-        <select name="trabajo" id="trabajo">
-            <option value=""></option>
-            <option value="SI">SI</option>
-            <option value="NO">NO</option>
-        </select>
+            <label for="trabajo">Trabajas en alguna empresa</label>
+            <select name="trabajo" id="trabajo">
+                <option value=""></option>
+                <option value="SI">SI</option>
+                <option value="NO">NO</option>
+            </select>
         </div>
 
         <div class="formulario">
-        <label for="empresa">empresa</label>
-        <input type="text" name="empresa" id="empresa" placeholder="En que empresa trabajas">
+            <label for="empresa">empresa</label>
+            <input type="text" name="empresa" id="empresa" placeholder="En que empresa trabajas">
         </div>
 
         <div class="formulario">
-        <label for="cargo">Cargo</label>
-        <input type="text" name="cargo" id="cargo" placeholder="En que cargo te encuentras">
+            <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" id="cargo" placeholder="En que cargo te encuentras">
         </div>
 
         <button type="submit">Guardar datos</button>
