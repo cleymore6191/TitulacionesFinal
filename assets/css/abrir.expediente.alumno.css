@@ -1,0 +1,30 @@
+.text {
+    color: black;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 30px;
+}
+
+.contenedor {
+    color: black;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin: 15px 0;
+    width: 10%;
+    padding: 10px;
+    cursor: pointer;
+}

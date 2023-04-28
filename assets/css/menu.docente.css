@@ -1,0 +1,20 @@
+.text {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 50px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+.contenedor-1 button {
+    position: absolute;
+    text-align: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin: 15px;
+}
