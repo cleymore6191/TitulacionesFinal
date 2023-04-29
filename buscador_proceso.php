@@ -55,11 +55,12 @@
                                     <td><?php echo $row['Apellidos'] ?></td>
                                     <td><?php echo $row['Carrera'] ?></td>
                                     <td>
-                                        <button onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)"><i class="bi bi-airplane"></i></button>
+                                        <button onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Ver datos generales</button>
                                         <button onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">ver expediente</button>
                                     </td>
                                 </tr>
-                            <?php } ?>
+                            <?php }
+                            ?>
                         </tbody>
                     </table>
                 </div>
