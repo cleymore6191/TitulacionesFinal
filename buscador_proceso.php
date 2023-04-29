@@ -55,8 +55,8 @@
                                     <td><?php echo $row['Apellidos'] ?></td>
                                     <td><?php echo $row['Carrera'] ?></td>
                                     <td>
-                                        <button onclick="detailByStudent($row['No_control'])">Ver datos generales</button>
-                                        <button>ver expediente</button>
+                                        <button onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)"><i class="bi bi-airplane"></i></button>
+                                        <button onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">ver expediente</button>
                                     </td>
                                 </tr>
                             <?php } ?>
@@ -76,6 +76,7 @@
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/tabla.js"></script>
     <script type="text/javascript" src="assets/js/detalleProcesos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>
 
