@@ -30,7 +30,8 @@
 
             <div class="Autorizacion">
                 <p>Autorizacion de impresion</p>
-                <button id="imprimir-btn">Imprimir documento</button>
+                <input type="file" name="archivo">
+                <input type="submit" name="submit" value="Subir documento">
             </div>
 
             <div class="Liberacion">
@@ -50,9 +51,14 @@
                 <button id="visualizar-btn">Aviso de tu titulacion</button>
             </div>
 
+            <div class="Fecha">
+                <p>Protocolo</p>
+                <button id="visualizar-btn">ver protocolo</button>
+            </div>
+
             <div>
-                <button onclick="window.location.href='menu_alumno.html'">Atras</button>
-                <button onclick="window.location.href='login_alumnos.html'">Cerrar Session</button>
+                <button onclick="window.location.href='menu_alumno.php'">Atras</button>
+                <button onclick="window.location.href='login_alumnos.php'">Cerrar Session</button>
             </div>
         </div>
     </form>
