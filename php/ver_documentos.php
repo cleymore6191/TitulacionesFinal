@@ -1,20 +1,24 @@
 <?php
 
-    include 'conexion_be.php';
+    $conexion = mysqli_connect("localhost", "root", "", "titulaciones");
 
-    if($conn->connect_error){
-        die("Error al conectar con la base de datos: ". $conn->connect_error);
+    session_start();
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $numero_control = $_POST["No_control"];
+    $asignacion_asesor = $_FILES['archivo']['name'];
+    $aviso = $_FILES['archivo']['name'];
+    $protocolo = $_FILES['archivo']['name'];
+
+    $contenido_archivo = file_get_contents($_FILES['archivo']['tmp_name']);
+
+    $query = "INSERT INTO expediente_alumno ( Protocolo)
+                        VALUES ( '$protocolo') WHEN  no_control=  $numero_control ";
+
+    mysqli_query($conexion, $query);
+
+    echo "El archivo se ha subido correctamente";
 
     }
-
-    $asesor = $_POST["nombre"];
-
-    $solicitud_titulacion = $_FILES['archivo']['name'];
-    $certificado_total = $_FILES['archivo']['name'];
-    $hoja_ingles = $_FILES['archivo']['name'];
-    $no_adeudo = $_FILES['archivo']['name'];
-
-    $sql = "INSERT INTO expediente_alumno "
-
 
 ?>

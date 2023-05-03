@@ -23,6 +23,7 @@
                 <label for="No_control" class="form__label"></label>
                 <input type="text" name="No_control" required>
             </div>
+            
             <div class="Solicitud">
                 <p>Solicitud de proceso de titulacion</p>
             </div>
