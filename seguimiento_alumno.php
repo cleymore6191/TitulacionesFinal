@@ -15,7 +15,7 @@
         Seguimiento de tu proceso de titulacion
     </h3>
 
-    <form action="" method="">
+    <form action="" method="" enctype="multipart/form-data">
         <div class="contenedor">
             <div class="Asesores">
                 <p>Asignacion de Revisores</p>
@@ -49,11 +49,6 @@
             <div class="Fecha">
                 <p>Fecha de titulacion</p>
                 <button id="visualizar-btn">Aviso de tu titulacion</button>
-            </div>
-
-            <div class="Fecha">
-                <p>Protocolo</p>
-                <button id="visualizar-btn">ver protocolo</button>
             </div>
 
             <div>

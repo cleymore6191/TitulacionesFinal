@@ -7,14 +7,14 @@
     $apellido = $_POST['apellido'];
     $numero_control = $_POST['numero_control'];
     $carrera = $_POST['carrera'];
-    $email = $_POST['email'];
     $telefono = $_POST['telefono'];
+    $email = $_POST['email'];
     $trabajo = $_POST['trabajo'];
     $empresa = $_POST['empresa'];
     $cargo = $_POST['cargo'];
 
-    $query = "INSERT INTO datos_alumno (Nombre, Apellidos, No_control, Carrera, Email, Telefono, Trabajo, Empresa, Cargo)
-                        VALUES ('$nombre', '$apellido', '$numero_control', '$carrera', '$email', '$telefono', '$trabajo', '$empresa', '$cargo')";
+    $query = "INSERT INTO datos_alumno (Nombre, Apellidos, No_control, Carrera, Telefono, Email, Trabajo, Empresa, Cargo)
+                        VALUES ('$nombre', '$apellido', '$numero_control', '$carrera', '$telefono', '$email', '$trabajo', '$empresa', '$cargo')";
             
     $ejecutar = mysqli_query($conexion, $query);
 

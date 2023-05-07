@@ -43,13 +43,18 @@
         </div>
 
         <div class="formulario">
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Escribe tu numero de telefono" required>
+        </div>
+
+        <div class="formulario">
             <label for="email">Email</label>
             <input type="text" name="email" id="email" placeholder="Escribe tu correo institucional" required>
         </div>
 
-        <div class="formulario">
-            <label for="telefono">Telefono</label>
-            <input type="text" name="telefono" id="telefono" placeholder="Escribe tu numero de telefono" required>
+        <div class='formulario'>
+            <label for="asesor">Asesor</label>
+            <input type="text" name="asesor" id="asesor" placeholder="Escribe tu asesor de tus residencias">
         </div>
 
         <p class="nota">
