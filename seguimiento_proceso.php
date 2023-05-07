@@ -8,78 +8,24 @@
     <title>Seguimiento del proceso</title>
     <link rel="stylesheet" href="assets/css/seguimiento.alumno.css">
 </head>
-
 <body>
 
-    <h3 class="text">
-        Expediente del egresado
-    </h3>
+<div class="contenedor">
 
 
-
-    <div class="contenedor">
-        <div class="Solicitud">
-            <p>Solicitud de titulacion</p>
-            <button id="visualizar-btn">Ver Solicitud</button>
-        </div>
-
-        <div class="Certificado">
-            <p>Certificado total</p>
-            <button id="visualizar-btn">Ver certificado</button>
-        </div>
-
-        <div class="Ingles">
-            <p>Hoja de liberacion de ingles</p>
-            <button id="visualizar-btn">Ver hoja de ingles</button>
-        </div>
-
-        <div class="No adeudo">
-            <p>Hoja de no adeudo </p>
-            <button id="visualizar-btn">Ver hoja de no adeudo</button>
-        </div>
-
-        <div class="Asesor">
-            <p>Nombre del asesor:</p>
-        </div>
-
-        <form action="php/asignacion.php" method="POST" enctype="multipart/form-data">
-            <div class="Asesores">
-                <p>Asignacion de Revisores</p>
-                <input type="file" name="archivo">
-                <input type="hidden" name="No_control" value="<?php echo $row['No_control'] ?>">
-                <input type="submit" name="submit" value="Subir documento">
-            </div>
-        </form>
-
-        <div class="Firmas">
-            <p>Formato de 3 firmas</p>
-            <button id="visualizar-btn">Ver 3 firmas</button>
-        </div>
-
-        <div class="Autorizacion">
-            <p>Autorizacion de impresion</p>
-            <button id="visualizar-btn">Ver Autorizacion de impresion</button>
-        </div>
-
-        <div class="Liberacion">
-            <p>Liberacion de titulacion</p>
-            <button id="visualizar-btn">Ver liberacion de titulacion</button>
-        </div>
-
-        <div class="No inconveniencia">
-            <p>Hoja de no inconveniencia</p>
-            <button id="visualizar-btn">Ver hoja de no inconveniencia</button>
-        </div>
-
-        <form action="php/aviso.php" method="POST" enctype="multipart/form-data">
-            <div class="Aviso">
-                <p>Aviso de titulacion</p>
-                <input type="file" name="archivo">
-                <input type="hidden" name="No_control" value="<?php echo $row['No_control'] ?>">
-                <input type="submit" name="submit" value="Subir documento">
-            </div>
-        </form>
+    <div style="text-align:center;">
+        <?php echo "El numero de control del alumno: ". $_GET['No_control']; ?> 
     </div>
+
+    <form action="php/visualizar_solicitud.php" method="$_FILES">
+        <div class="Solicitud">
+            <p>Solicitud de proceso de titulacion</p>
+            <button id="visualizar-btn">Ver solicitud</button>
+        </div>
+    </form>
+</div>
+
+        
 
     <script src="assets/js/visualizar.js"></script>
 

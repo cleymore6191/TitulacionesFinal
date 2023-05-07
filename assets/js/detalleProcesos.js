@@ -17,6 +17,6 @@ function detailByStudent(usuario) {
 
 }
 
-function goToSeguimientoProceso(numControl) {
-    window.location.href = "seguimiento_proceso.php?noControl=" + numControl
+function goToSeguimientoProceso(No_control) {
+    window.location.href = "seguimiento_proceso.php?No_control=" + No_control
 }

@@ -19,7 +19,7 @@
     <div class="contenedor">
         <div class="contenedor-1">
             <h1>Titulaciones en proceso</h1>
-            <button onclick="window.location.href='titulaciones_proceso.php'">Entrar</button>
+            <button onclick="window.location.href='buscador_proceso.php'">Entrar</button>
         </div>
         <div class="contenedor-1">
             <h1>Titulaciones concluidas</h1>

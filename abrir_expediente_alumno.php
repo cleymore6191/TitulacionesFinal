@@ -17,7 +17,6 @@
 
     <div class="contenedor">
         <form action="php/subir_expediente.alumno.php" method="post" enctype="multipart/form-data">
-
             <div class="No_control">
                 <p>Escribe tu numero de control</p>
                 <label for="No_control" class="form__label"></label>
@@ -27,27 +26,27 @@
             <div class="Solicitud">
                 <p>Solicitud de proceso de titulacion</p>
             </div>
-            <input type="file" name="archivo" required>
+            <input type="file" name="solicitud" required>
 
             <div class="Certificado">
                 <p>Certificado total</p>
             </div>
-            <input type="file" name="archivo" required>
+            <input type="file" name="certificado" required>
 
             <div class="Ingles">
                 <p>Hoja de liberacion de ingles</p>
             </div>
-            <input type="file" name="archivo" required>
+            <input type="file" name="ingles" required>
 
             <div class="No adeudo">
                 <p>Hoja de no adeudo triplicado</p>
             </div>
-            <input type="file" name="archivo" required>
+            <input type="file" name="adeudo" required>
 
             <div class="Asesor">
                 <p>Nombre completo de tu asesor</p>
                 <label for="nombre" class="form__label"></label>
-                <input type="text" name="nombre" required>
+                <input type="text" name="asesor" required>
             </div>
 
             <div class="Enviar">

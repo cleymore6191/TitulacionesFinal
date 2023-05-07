@@ -1,7 +1,7 @@
 <?php
 
 //Establecer la conexion a la base de datos
-require 'conexion_be.php';
+    require 'conexion_be.php';
 
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
