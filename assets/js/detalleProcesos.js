@@ -6,11 +6,11 @@ function detailByStudent(usuario) {
         icon: 'info',
         html: `<p>No. de control: ${usuario.No_control}</p>` +
             `<p>Nombre: ${usuario.Nombre}</p>` +
-            `<p>Apellidos: ${usuario.Apellidos}</p>` +
+            `<p>Apellido: ${usuario.Apellidos}</p>` +
             `<p>Carrera: ${usuario.Carrera}</p>` +
             `<p>Email: ${usuario.Email}</p>` +
             `<p>Telefono: ${usuario.Telefono}</p>` +
-            `<p>Trabajo: ${usuario.Trabajo}</p>` +
+            `<p>Trabajo: ${usuario.Trabajas}</p>` +
             `<p>Empresa: ${usuario.Empresa}</p>` +
             `<p>Cargo: ${usuario.Cargo}</p>`
     });

@@ -44,6 +44,7 @@
                                 <th>Nombre</th>
                                 <th>Apellidos</th>
                                 <th>Carrera</th>
+                                <th>Asesor</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -52,11 +53,12 @@
                                 <tr>
                                     <td><?php echo $row['No_control'] ?></td>
                                     <td><?php echo $row['Nombre'] ?></td>
-                                    <td><?php echo $row['Apellidos'] ?></td>
+                                    <td><?php echo $row['Apellido'] ?></td>
                                     <td><?php echo $row['Carrera'] ?></td>
+                                    <td><?php echo $row['Asesor'] ?></td>
                                     <td>
-                                        <button onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Ver datos generales</button>
-                                        <button onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">ver expediente</button>
+                                        <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
+                                        <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">ver expediente</button>
                                     </td>
                                 </tr>
                             <?php }

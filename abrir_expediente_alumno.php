@@ -43,12 +43,6 @@
             </div>
             <input type="file" name="adeudo" required>
 
-            <div class="Asesor">
-                <p>Nombre completo de tu asesor</p>
-                <label for="nombre" class="form__label"></label>
-                <input type="text" name="asesor" required>
-            </div>
-
             <div class="Enviar">
                 <input type="submit">
             </div>

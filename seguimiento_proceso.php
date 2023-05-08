@@ -12,8 +12,8 @@
 
     <div class="contenedor">
         <div style="text-align:center;">
-        <?php echo "El numero de control del alumno: ". $_GET['No_control']; ?> 
-    </div>
+            <?php echo "El numero de control del alumno: ". $_GET['No_control']; ?> 
+        </div>
 
         <div class="Solicitud">
             <p>Solicitud de proceso de titulacion</p>
