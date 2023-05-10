@@ -58,7 +58,8 @@
                                     <td><?php echo $row['Asesor'] ?></td>
                                     <td>
                                         <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
-                                        <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">ver expediente</button>
+                                        <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
+                                        <button class="btn btn-outline-danger">Concluido</button>
                                     </td>
                                 </tr>
                             <?php }

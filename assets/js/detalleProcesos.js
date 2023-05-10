@@ -6,7 +6,7 @@ function detailByStudent(usuario) {
         icon: 'info',
         html: `<p>No. de control: ${usuario.No_control}</p>` +
             `<p>Nombre: ${usuario.Nombre}</p>` +
-            `<p>Apellido: ${usuario.Apellidos}</p>` +
+            `<p>Apellidos: ${usuario.Apellido}</p>` +
             `<p>Carrera: ${usuario.Carrera}</p>` +
             `<p>Email: ${usuario.Email}</p>` +
             `<p>Telefono: ${usuario.Telefono}</p>` +
