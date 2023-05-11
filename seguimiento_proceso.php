@@ -15,17 +15,28 @@
             <?php echo "El numero de control del alumno: ". $_GET['No_control']; ?> 
         </div>
 
-        <div>
-            <form action="php/subir_aviso.php" method="POST" enctype="multipart/form-data">
-                <div class="Titulacion">
-                    <p>Aviso de Titulacion</p>
-                    <input type="hidden" name="No_control" value=" <?php echo $_GET['No_control']; ?>">
-                    <label for="Aviso"></label>
-                    <input type="file" name="Aviso">
-                    <input type="submit" value="Subir documento">
-                </div>
+
+        <div class="Revisores">
+            <form action="php/subir_revisores.php" method="POST" enctype="multipart/form-data">
+                <p>Aviso de revisores</p>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <label for="Revisores"></label>
+                <input type="file" name="Revisores">
+                <input type="submit" value="Subir documento">
             </form>
         </div>
+
+        <div class="Titulacion">
+            <form action="php/subir_aviso.php" method="POST" enctype="multipart/form-data">
+                <p>Aviso de Titulacion</p>
+                <input type="hidden" name="No_control" value=" <?php echo $_GET['No_control']; ?>">
+                <label for="Aviso"></label>
+                <input type="file" name="Aviso">
+                <input type="submit" value="Subir documento">
+            </form>
+        </div>
+            
+    
         
     </div>
 

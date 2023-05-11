@@ -15,35 +15,46 @@
         Seguimiento de tu proceso de titulacion
     </h3>
 
-    <form action="" method="" enctype="multipart/form-data">
+    
         <div class="contenedor">
+
             <div class="Asesores">
-                <p>Asignacion de Revisores</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <form action="" method="" enctype="multipart/form-data">
+                    <p>Asignacion de Revisores</p>
+                    <button id="visualizar-btn">Visualizar documento</button>
+                </form>
             </div>
 
             <div class="Firmas">
-                <p>Formato de 3 firmas</p>
-                <input type="file" name="archivo">
-                <input type="submit" name="submit" value="Subir documento">
+                <form action="" method="" enctype="multipart/form-data">
+                    <p>Formato de 3 firmas</p>
+                    <input type="file" name="archivo">
+                    <input type="submit" name="submit" value="Subir documento">
+                </form>
             </div>
 
             <div class="Autorizacion">
-                <p>Autorizacion de impresion</p>
-                <input type="file" name="archivo">
-                <input type="submit" name="submit" value="Subir documento">
+                <form action="" method="" enctype="multipart/form-data">
+                    <p>Autorizacion de impresion</p>
+                    <input type="file" name="archivo">
+                    <input type="submit" name="submit" value="Subir documento">
+                </form>
             </div>
 
             <div class="Liberacion">
-                <p>Liberacion de titulacion</p>
-                <input type="file" name="archivo">
-                <input type="submit" name="submit" value="Subir documento">
+                <form action="" method="" enctype="multipart/form-data">
+                    <p>Liberacion de titulacion</p>
+                    <input type="file" name="archivo">
+                    <input type="submit" name="submit" value="Subir documento">
+                </form>
             </div>
 
             <div class="Inconveniencia">
-                <p>Hoja de no Inconveniencia</p>
-                <input type="file" name="archivo">
-                <input type="submit" name="submit" value="Subir documento">
+                <form action="" method="" enctype="multipart/form-data">
+                    <p>Hoja de no Inconveniencia</p>
+                    <input type="file" name="archivo">
+                    <input type="submit" name="submit" value="Subir documento">
+                </form>    
             </div>
 
             <div class="Fecha">
@@ -56,7 +67,7 @@
                 <button onclick="window.location.href='login_alumnos.php'">Cerrar Session</button>
             </div>
         </div>
-    </form>
+    
 
     <script src="assets/js/imprimir.js"></script>
     <script src="assets/js/visualizar.js"></script>
