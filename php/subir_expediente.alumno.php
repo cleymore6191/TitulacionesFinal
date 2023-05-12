@@ -4,11 +4,13 @@
 
     $numero_control = $_POST['No_control'];
 
-    $solicitud_titulacion = $_FILES['solicitud']['name'];
-    $certificado_total = $_FILES['certificado']['name'];
-    $hoja_ingles = $_FILES['ingles']['name'];
-    $no_adeudo = $_FILES['adeudo']['name'];
+    $solicitud_titulacion = $_FILES['archivo']['name'];
+    $certificado_total = $_FILES['archivo']['name'];
+    $hoja_ingles = $_FILES['archivo']['name'];
+    $no_adeudo = $_FILES['archivo']['name'];
 
+    $contenido = file_get_contents($archivo);
+    
     $sql = "INSERT INTO abrir_expediente (No_control, Solicitud_titulacion, Certificado_total, Hoja_ingles, No_Adeudo)
                 VALUES ('$numero_control', '$solicitud_titulacion', '$certificado_total', '$hoja_ingles', '$no_adeudo')";
 
