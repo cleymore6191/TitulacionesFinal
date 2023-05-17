@@ -6,15 +6,15 @@
     
 
     $query = "SELECT Solicitud_titulacion FROM abrir_expediente WHERE No_control = '$no_control'";
-    
+
     $resultado = mysqli_query($conexion, $query);
 
-    if($row = mysqli_fetch_assoc($resultado)){
+    $registro = mysqli_fetch_assoc($resultado);
 
-        $solicitud_titulacion = $row ['Solicitud_titulacion'];
+    $documento = $registro['Solicitud_titulacion'];
+
+    if (!$registro || empty($documento)){
+        echo "El documento no existe o no esta disponible";
+        exit;
     }
-
-    header('content-Type: application/pdf');
-
-    echo $solicitud_titulacion;
 ?>

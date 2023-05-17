@@ -25,23 +25,23 @@
             
             <div class="Solicitud">
                 <p>Solicitud de proceso de titulacion</p>
+                <input type="file" name="solicitud" required>
             </div>
-            <input type="file" name="archivo" required>
 
             <div class="Certificado">
                 <p>Certificado total</p>
+                <input type="file" name="certificado" required>
             </div>
-            <input type="file" name="archivo" required>
 
             <div class="Ingles">
                 <p>Hoja de liberacion de ingles</p>
+                <input type="file" name="ingles" required>
             </div>
-            <input type="file" name="archivo" required>
-
+            
             <div class="No adeudo">
                 <p>Hoja de no adeudo triplicado</p>
+                <input type="file" name="adeudo" required>
             </div>
-            <input type="file" name="archivo" required>
 
             <div class="Enviar">
                 <input type="submit">
