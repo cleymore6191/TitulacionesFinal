@@ -19,7 +19,7 @@
             <form action="php/visualizar_solicitud.php" method="POST">
                 <p>Solicitud de titulacion</p>
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>"> 
-                <input type="submit" value="Ver documento">               
+                <button type="submit" value="Ver documento">Ver documento</buttom>               
             </form>
         </div>
 

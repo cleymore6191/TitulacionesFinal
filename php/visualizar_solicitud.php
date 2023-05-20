@@ -1,20 +1,22 @@
 <?php
 
-    include 'conexion_be.php';
+    include 'conexion_be.php';    
 
     $no_control = $_POST['No_control'];
-    
 
-    $query = "SELECT Solicitud_titulacion FROM abrir_expediente WHERE No_control = '$no_control'";
-
+    $query = "SELECT Contenido FROM subir_solicitud WHERE No_control = '$no_control'";
     $resultado = mysqli_query($conexion, $query);
 
-    $registro = mysqli_fetch_assoc($resultado);
+    if($resultado && mysqli_num_rows($resultado) > 0){
 
-    $documento = $registro['Solicitud_titulacion'];
+        $row = mysqli_fetch_assoc($resultado);
+        $contenido = $row['Contenido'];
 
-    if (!$registro || empty($documento)){
-        echo "El documento no existe o no esta disponible";
-        exit;
+        header("Content-type: application/pdf");
+        
+        echo $contenido;
+    }else{
+        echo "El alumno no a abierto su expediente";
     }
+    
 ?>
