@@ -19,28 +19,31 @@
             <form action="php/visualizar_solicitud.php" method="POST">
                 <p>Solicitud de titulacion</p>
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>"> 
-                <button type="submit" value="Ver documento">Ver documento</buttom>               
+                <button id="visualizar-btn">Ver documento</buttom>               
             </form>
         </div>
 
         <div class="Certificado">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="php/visualizar_certificado.php" method="POST">
                 <p>Certificado total</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
         <div class="Ingles">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="php/visualizar_ingles.php" method="POST">
                 <p>Hoja de ingles</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
         <div class="No adeudo">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="php/visualizar_adeudo.php" method="POST">
                 <p>Hoja de no adeudo</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
