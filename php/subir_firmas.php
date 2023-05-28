@@ -2,6 +2,4 @@
 
     include 'conexion_be.php';
 
-    
-
 ?>

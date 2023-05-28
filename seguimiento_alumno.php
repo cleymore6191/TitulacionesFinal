@@ -19,7 +19,7 @@
         <div class="contenedor">
 
             <div class="Asesores">
-                <form action="" method="" enctype="multipart/form-data">
+                <form action="" method="">
                     <p>Asignacion de Revisores</p>
                     <button id="visualizar-btn">Visualizar documento</button>
                 </form>

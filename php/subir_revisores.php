@@ -3,20 +3,23 @@
     include 'conexion_be.php';
 
     $no_control = $_POST['No_control'];
-    $revisores = $_FILES['Revisores'];
 
-    $contenido_revisores = file_get_contents($revisores['tmp_name']);
+    $revisores = $_FILES['revisores']['name'];
+    $tipo = $_FILES['revisores']['type'];
+    $contenido = file_get_contents($_FILES['revisores']['tmp_name']);
 
-    $contenido_revisores = mysqli_real_escape_string($conexion, $contenido_revisores);
+    $no_control = mysqli_real_escape_string($conexion, $no_control);
+    $revisores = mysqli_real_escape_string($conexion, $revisores);
+    $tipo = mysqli_real_escape_string($conexion, $tipo);
+    $contenido = mysqli_real_escape_string($conexion, $contenido);
 
-    $query = "INSERT INTO revisores(No_control, Asignacion_revisores)
-                VALUES ('$no_control', '$contenido_revisores')";
+    $query = "INSERT INTO revisores (No_control, Asignacion_revisores, Tipo, Contenido)
+                VALUES ('$no_control', '$revisores', '$tipo', '$contenido')";
+    
+    $ejecutar = mysqli_query($conexion, $query);
 
-    mysqli_query($conexion, $query);
-
-    echo "<script>alert('Documento subido exitosamente');</script>";
-
-    header("location: seguimiento_proceso.php?No_control=" . $no_control);
+    header("location: ../seguimiento_proceso.php");
     exit();
+
 
 ?>

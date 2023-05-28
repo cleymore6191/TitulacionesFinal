@@ -51,46 +51,46 @@
             <form action="php/subir_revisores.php" method="POST" enctype="multipart/form-data">
                 <p>Aviso de revisores</p>
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
-                <label for="Revisores"></label>
-                <input type="file" name="Revisores">
+                <label for="revisores"></label>
+                <input type="file" name="revisores">
                 <input type="submit" value="Subir documento">
             </form>
         </div>
 
         <div class="3 firmas">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="">
                 <p>Formato de 3 firmas</p>
                 <button id="visualizar-btn">Visualizar documento</button>
             </form>
         </div>
 
         <div class="Autorizacion de impresion">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="">
                 <p>Autorizacion de impresion </p>
                 <button id="visualizar-btn">Visualizar documento</button>
             </form>
         </div>
 
         <div class="Liberacion de titulacion">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="">
                 <p>Liberacion de titulacion</p>
                 <button id="visualizar-btn">Visualizar documento</button>
             </form>
         </div>
 
         <div class="Inconveniencia">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="">
                 <p>Hoja de inconveniencia</p>
                 <button id="visualizar-btn">Visualizar documento</button>
             </form>
         </div>
 
         <div class="Titulacion">
-            <form action="php/subir_aviso.php" method="POST" enctype="multipart/form-data">
+            <form action="php/subir_titulacion.php" method="POST" enctype="multipart/form-data">
                 <p>Aviso de Titulacion</p>
                 <input type="hidden" name="No_control" value=" <?php echo $_GET['No_control']; ?>">
-                <label for="Aviso"></label>
-                <input type="file" name="Aviso">
+                <label for="aviso"></label>
+                <input type="file" name="aviso">
                 <input type="submit" value="Subir documento">
             </form>
         </div>
