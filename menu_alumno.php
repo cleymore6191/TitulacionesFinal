@@ -12,7 +12,7 @@
 <body>
 
     <h3 class="text">
-        Proceso de titulacion
+        Bienvenido alumno
     </h3>
 
     <div class="contenedor">

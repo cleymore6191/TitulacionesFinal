@@ -26,34 +26,38 @@
             </div>
 
             <div class="Firmas">
-                <form action="" method="" enctype="multipart/form-data">
+                <form action="php/subir_firmas.php" method="POST" enctype="multipart/form-data">
                     <p>Formato de 3 firmas</p>
-                    <input type="file" name="archivo">
-                    <input type="submit" name="submit" value="Subir documento">
+                    <label for="firmas"></label>
+                    <input type="file" name="firmas">
+                    <input type="submit" value="Subir documento">
                 </form>
             </div>
 
             <div class="Autorizacion">
-                <form action="" method="" enctype="multipart/form-data">
+                <form action="php/subir_impresion.php" method="POST" enctype="multipart/form-data">
                     <p>Autorizacion de impresion</p>
-                    <input type="file" name="archivo">
-                    <input type="submit" name="submit" value="Subir documento">
+                    <label for="impresion"></label>
+                    <input type="file" name="impresion">
+                    <input type="submit" value="Subir documento">
                 </form>
             </div>
 
             <div class="Liberacion">
-                <form action="" method="" enctype="multipart/form-data">
+                <form action="php/subir_liberacion.php" method="POST" enctype="multipart/form-data">
                     <p>Liberacion de titulacion</p>
-                    <input type="file" name="archivo">
-                    <input type="submit" name="submit" value="Subir documento">
+                    <label for="liberacion"></label>
+                    <input type="file" name="liberacion">
+                    <input type="submit" value="Subir documento">
                 </form>
             </div>
 
             <div class="Inconveniencia">
                 <form action="" method="" enctype="multipart/form-data">
                     <p>Hoja de no Inconveniencia</p>
-                    <input type="file" name="archivo">
-                    <input type="submit" name="submit" value="Subir documento">
+                    <label for="inconveniencia"></label>
+                    <input type="file" name="inconveniencia">
+                    <input type="submit" value="Subir documento">
                 </form>    
             </div>
 
