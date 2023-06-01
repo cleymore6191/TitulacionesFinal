@@ -15,9 +15,7 @@
         Seguimiento de tu proceso de titulacion
     </h3>
 
-    
         <div class="contenedor">
-
             <div class="Asesores">
                 <form action="" method="">
                     <p>Asignacion de Revisores</p>
@@ -53,7 +51,7 @@
             </div>
 
             <div class="Inconveniencia">
-                <form action="" method="" enctype="multipart/form-data">
+                <form action="php/subir_inconveniencia.php" method="POST" enctype="multipart/form-data">
                     <p>Hoja de no Inconveniencia</p>
                     <label for="inconveniencia"></label>
                     <input type="file" name="inconveniencia">
@@ -61,9 +59,11 @@
                 </form>    
             </div>
 
-            <div class="Fecha">
+            <div class="Fecha"> 
+                <form action="" method="">
                 <p>Fecha de titulacion</p>
                 <button id="visualizar-btn">Aviso de tu titulacion</button>
+                </form>
             </div>
 
             <div>

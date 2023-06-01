@@ -58,30 +58,34 @@
         </div>
 
         <div class="3 firmas">
-            <form action="" method="">
+            <form action="php/visualizar_firmas.php" method="POST">
                 <p>Formato de 3 firmas</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
         <div class="Autorizacion de impresion">
-            <form action="" method="">
-                <p>Autorizacion de impresion </p>
-                <button id="visualizar-btn">Visualizar documento</button>
+            <form action="php/visualizar_autorizacion.php" method="POST">
+                <p>Autorizacion de impresion</p>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
         <div class="Liberacion de titulacion">
-            <form action="" method="">
+            <form action="php/visualizar_liberacion.php" method="POST">
                 <p>Liberacion de titulacion</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
         <div class="Inconveniencia">
-            <form action="" method="">
+            <form action="php/visualizar_inconveniencia.php" method="POST">
                 <p>Hoja de inconveniencia</p>
-                <button id="visualizar-btn">Visualizar documento</button>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
