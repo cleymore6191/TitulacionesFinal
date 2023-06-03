@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['numero_control'])){
+        header("Location: login_alumnos.php");
+        exit();
+    }
+
+    $numero_control = $_SESSION['numero_control'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +22,7 @@
 <body>
 
     <h3 class="text">
-        Bienvenido alumno
+        Bienvenido alumno <?php echo $numero_control ?>
     </h3>
 
     <div class="contenedor">

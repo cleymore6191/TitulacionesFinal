@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['numero_control'])){
+        header ("Location: login_alumnos.php");
+        exit();
+    }
+
+    $numero_control = $_SESSION['numero_control'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,19 +24,22 @@
 
     <h3 class="text">
         Seguimiento de tu proceso de titulacion
+        <?php echo $numero_control; ?>
     </h3>
 
         <div class="contenedor">
             <div class="Asesores">
-                <form action="" method="">
+                <form action="php/visualizar_revisores.php" method="POST">
                     <p>Asignacion de Revisores</p>
-                    <button id="visualizar-btn">Visualizar documento</button>
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <button id="visualizar-btn">Ver documento</button>
                 </form>
             </div>
 
             <div class="Firmas">
                 <form action="php/subir_firmas.php" method="POST" enctype="multipart/form-data">
                     <p>Formato de 3 firmas</p>
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
                     <label for="firmas"></label>
                     <input type="file" name="firmas">
                     <input type="submit" value="Subir documento">
@@ -35,6 +49,7 @@
             <div class="Autorizacion">
                 <form action="php/subir_impresion.php" method="POST" enctype="multipart/form-data">
                     <p>Autorizacion de impresion</p>
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
                     <label for="impresion"></label>
                     <input type="file" name="impresion">
                     <input type="submit" value="Subir documento">
@@ -44,6 +59,7 @@
             <div class="Liberacion">
                 <form action="php/subir_liberacion.php" method="POST" enctype="multipart/form-data">
                     <p>Liberacion de titulacion</p>
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                     <label for="liberacion"></label>
                     <input type="file" name="liberacion">
                     <input type="submit" value="Subir documento">
@@ -52,7 +68,8 @@
 
             <div class="Inconveniencia">
                 <form action="php/subir_inconveniencia.php" method="POST" enctype="multipart/form-data">
-                    <p>Hoja de no Inconveniencia</p>
+                    <p>Hoja de no Inconveniencia y pago de titulacion</p>
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                     <label for="inconveniencia"></label>
                     <input type="file" name="inconveniencia">
                     <input type="submit" value="Subir documento">
@@ -60,8 +77,9 @@
             </div>
 
             <div class="Fecha"> 
-                <form action="" method="">
+                <form action="php/visualizar_titulacion.php" method="POST">
                 <p>Fecha de titulacion</p>
+                <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                 <button id="visualizar-btn">Aviso de tu titulacion</button>
                 </form>
             </div>
