@@ -94,7 +94,7 @@
         </div>
 
         <div class="3 firmas">
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="php/subir_firmas_docente.php" method="POST" enctype="multipart/form-data">
                 <p>Formato de 3 firmas</p>
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="firmas"></label>
@@ -109,16 +109,30 @@
         </div>
 
         <div class="Autorizacion de impresion">
-            <form action="php/visualizar_autorizacion.php" method="POST">
+            <form action="php/subir_impresion_docente.php" method="POST" enctype="multipart/form-data">
                 <p>Autorizacion de impresion</p>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <label for="impresion"></label>
+                <input type="file" name="impresion">
+                <input type="submit" value="Subir documento">
+            </form>
+
+            <form action="php/visualizar_autorizacion.php" method="POST">
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <button id="visualizar-btn">Ver documento</button>
             </form>
         </div>
 
         <div class="Liberacion de titulacion">
-            <form action="php/visualizar_liberacion.php" method="POST">
+            <form action="php/subir_liberacion_docente.php" method="POST" enctype="multipart/form-data">
                 <p>Liberacion de titulacion</p>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <label for="liberacion"></label>
+                <input type="file" name="liberacion">
+                <input type="submit" value="Subir documento">
+            </form>
+
+            <form action="php/visualizar_liberacion.php" method="POST">
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <button id="visualizar-btn">Ver documento</button>
             </form>
@@ -140,6 +154,12 @@
                 <input type="file" name="aviso">
                 <input type="submit" value="Subir documento">
             </form>
+
+            <form action="php/visualizar_titulacion.php" method="POST">
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
+            </form>
+
         </div>
 
     </div>

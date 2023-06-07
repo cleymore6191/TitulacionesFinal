@@ -44,6 +44,11 @@
                     <input type="file" name="firmas">
                     <input type="submit" value="Subir documento">
                 </form>
+
+                <form action="php/visualizar_firmas.php" method="POST">
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <button id="visualizar-btn">Ver documento</button>
+                </form>
             </div>
 
             <div class="Autorizacion">
@@ -53,6 +58,11 @@
                     <label for="impresion"></label>
                     <input type="file" name="impresion">
                     <input type="submit" value="Subir documento">
+                </form>
+
+                <form action="php/visualizar_autorizacion.php" method="POST">
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <button id="visualizar-btn">Ver documento</button>
                 </form>
             </div>
 
@@ -64,6 +74,11 @@
                     <input type="file" name="liberacion">
                     <input type="submit" value="Subir documento">
                 </form>
+
+                <form action="php/visualizar_liberacion.php" method="POST">
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <button id="visualizar-btn">Ver documento</button>
+                </form>
             </div>
 
             <div class="Inconveniencia">
@@ -74,13 +89,18 @@
                     <input type="file" name="inconveniencia">
                     <input type="submit" value="Subir documento">
                 </form>    
+
+                <form action="php/visualizar_inconveniencia.php" method="POST">
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <button id="visualizar-btn">Ver documento</button>
+                </form>
             </div>
 
             <div class="Fecha"> 
                 <form action="php/visualizar_titulacion.php" method="POST">
-                <p>Fecha de titulacion</p>
-                <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
-                <button id="visualizar-btn">Aviso de tu titulacion</button>
+                    <p>Fecha de titulacion</p>
+                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
+                    <button id="visualizar-btn">Aviso de tu titulacion</button>
                 </form>
             </div>
 
