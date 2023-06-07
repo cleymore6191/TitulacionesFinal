@@ -4,7 +4,7 @@
 
     $no_control = $_POST['No_control'];
 
-    $query = "SELECT Contenido FROM liberacion_titulacion WHERE No_control = '$no_control'";
+    $query = "SELECT Contenido FROM liberacion_de_titulacion WHERE No_control = '$no_control'";
     $resultado = mysqli_query($conexion, $query);
 
     if($resultado && mysqli_num_rows($resultado) > 0){

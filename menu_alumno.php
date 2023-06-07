@@ -22,7 +22,7 @@
 <body>
 
     <h3 class="text">
-        Bienvenido alumno <?php echo $numero_control ?>
+        Bienvenido alumno <?php echo $numero_control; ?>
     </h3>
 
     <div class="contenedor">

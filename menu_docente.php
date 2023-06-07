@@ -23,7 +23,7 @@
         </div>
         <div class="contenedor-1">
             <h1>Titulaciones concluidas</h1>
-            <button onclick="window.location.href='titulaciones_concluidas.html'">Entrar</button>
+            <button onclick="window.location.href='titulaciones_concluidas.php'">Entrar</button>
         </div>
     </div>
 

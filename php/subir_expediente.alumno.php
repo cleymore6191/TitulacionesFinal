@@ -57,7 +57,7 @@
         $ejecutar3 = mysqli_query($conexion, $query3);
         $ejecutar4 = mysqli_query($conexion, $query4);
 
-        header("location: ../abrir_expediente_alumno.php");
+        header("location: ../menu_alumno.php");
         exit();
 
 ?>

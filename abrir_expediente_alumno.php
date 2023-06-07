@@ -48,11 +48,13 @@
             </div>
 
             <div class="Enviar">
-                <input type="submit">
+                <input type="submit" onclick="mostrarDocumentos">
             </div>
 
         </form>
     </div>
+
+    <script src="assets/js/alert.js"></script>
 
 </body>
 

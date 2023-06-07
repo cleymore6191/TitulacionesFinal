@@ -84,12 +84,11 @@
             <input type="text" name="cargo" id="cargo" placeholder="En que cargo te encuentras">
         </div>
 
-        <button type="submit">Guardar datos</button>
+        <button type="submit" onclick="mostrarDatos()">Guardar datos</button>
 
     </form>
 
-
-
+    <script src="assets/js/alert.js"></script>
 </body>
 
 </html>

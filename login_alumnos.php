@@ -33,7 +33,7 @@
                     <h2>Alumno</h2>
                     <input type="text" placeholder="Numero de control" name="numero_control">
                     <input type="password" placeholder="Contraseña" name="contraseña">
-                    <button onclick="window.location.href='menu_alumno.html'">Entrar</button>
+                    <button onclick="window.location.href='menu_alumno.php'">Entrar</button>
                 </form>
 
                 <form action="php/registro_alumno.php" method="POST" class="formulario__register">

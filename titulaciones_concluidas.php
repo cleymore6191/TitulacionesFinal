@@ -5,43 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proceso de tiulacion</title>
+    <title>Titulaciones concluidas</title>
 
-    <!--Bootstrap-->
+    <!--Boostratp-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!--CSS personalizado-->
     <link rel="stylesheet" href="assets/css/diseño.tabla.css">
 
     <!--datatables CSS basico-->
     <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css">
-    <!--datatables estilos bootstrap-->
+    <!--datatables estilos booststrap-->
     <link rel="stylesheet" type="text/css" href="assets/datatables/DataTables-1.13.4/css/dataTables.bootstrap4.min.css">
-
 </head>
 
 <body>
 
     <header>
         <h1 class="text-center text-light">Division de estudios profesionales</h1>
-        <h2 class="text-center text-light">Buscador <span class="backge badge-danger">de estudiantes</span></h2>
+        <h2 class="text-center text-light">Titulaciones<span class="backge badge-danger"> Concluidos</span></h2>
     </header>
 
     <div style="height:50px"></div>
 
-    <!--Tabla donde apareceran los alumnos registrados-->
-
-    <?php
-    $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
-    ?>
-
     <div class="container">
-    <div>
-        <a href="nuevo_registro.php">Nuevo Registro</a>
-    </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="table-responsive">
-                    <table id="example" id="tablaOrigen" class="table table-striped table-bordered" style="width:100%">
+                    <table id="example" id="tablaDestino" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>No. de control</th>
@@ -53,21 +43,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($link->query("SELECT * FROM datos_alumno") as $row) { ?>
-                                <tr>
-                                    <td><?php echo $row['No_control'] ?></td>
-                                    <td><?php echo $row['Nombre'] ?></td>
-                                    <td><?php echo $row['Apellido'] ?></td>
-                                    <td><?php echo $row['Carrera'] ?></td>
-                                    <td><?php echo $row['Asesor'] ?></td>
-                                    <td>
-                                        <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
-                                        <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
-                                        <button class="btn btn-outline-danger">Concluido</button>
-                                    </td>
-                                </tr>
-                            <?php }
-                            ?>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
+                                    <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -84,7 +70,6 @@
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/tabla.js"></script>
     <script type="text/javascript" src="assets/js/detalleProcesos.js"></script>
-    <script type="text/javascript" src="assets/js/moverdatos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>
