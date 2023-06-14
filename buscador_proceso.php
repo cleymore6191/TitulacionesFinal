@@ -63,7 +63,7 @@
                                     <td>
                                         <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
                                         <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
-                                        <button class="btn btn-outline-danger">Concluido</button>
+                                        <button class="btn btn-outline-danger" onclick="moverFila(this)">Concluido</button>
                                     </td>
                                 </tr>
                             <?php }
@@ -84,7 +84,7 @@
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/tabla.js"></script>
     <script type="text/javascript" src="assets/js/detalleProcesos.js"></script>
-    <script type="text/javascript" src="assets/js/moverdatos.js"></script>
+    <script type="text/javascript"src="assets/js/boton.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>

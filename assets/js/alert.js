@@ -3,7 +3,7 @@ function mostrarAlerta() {
 }
 
 function mostrarDatos() {
-    alert("Tus datos ya se guardaron ahora ya puedea abrir expediente");
+    alert("Tus datos ya se guardaron ahora ya puedes abrir expediente");
 }
 
 function mostrarDocumentos() {

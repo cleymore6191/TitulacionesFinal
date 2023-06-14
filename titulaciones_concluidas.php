@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="table-responsive">
-                    <table id="example" id="tablaDestino" class="table table-striped table-bordered" style="width:100%">
+                    <table id="example" id="tablaConcluida" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>No. de control</th>

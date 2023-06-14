@@ -23,7 +23,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="solicitud"></label>
                 <input type="file" name="solicitud">
-                <input type="submit" value="Subir documento"> 
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()"> 
             </form>
 
             <form action="php/visualizar_solicitud.php" method="POST">
@@ -39,7 +39,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="certificado"></label>
                 <input type="file" name="certificado">
-                <input type="submit" value="Subir documento">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_certificado.php" method="POST">
@@ -54,7 +54,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="ingles"></label>
                 <input type="file" name="ingles">
-                <input type="submit" value="Subir documento" onclick="mostrarExpediente">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_ingles.php" method="POST">
@@ -69,10 +69,25 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="adeudo"></label>
                 <input type="file" name="adeudo">
-                <input type="submit" value="Subir documento" onclick="mostrarExpediente">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_adeudo.php" method="POST">
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <button id="visualizar-btn">Ver documento</button>
+            </form>
+        </div>
+
+        <div class="analisis">
+            <form action="php/subir_analisis.php" method="POST" enctype="multipart/form-data">
+                <p>Analisis de titulacion</p>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <label for="analisis"></label>
+                <input type="file" name="analisis">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
+            </form>
+
+            <form action="php/visualizar_analisis.php" method="POST">
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <button id="visualizar-btn">Ver documento</button>
             </form>
@@ -84,7 +99,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="revisores"></label>
                 <input type="file" name="revisores">
-                <input type="submit" value="Subir documento">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_revisores.php" method="POST">
@@ -99,7 +114,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="firmas"></label>
                 <input type="file" name="firmas">
-                <input type="submit" value="Subir documento">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_firmas.php" method="POST">
@@ -114,7 +129,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="impresion"></label>
                 <input type="file" name="impresion">
-                <input type="submit" value="Subir documento">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_autorizacion.php" method="POST">
@@ -129,7 +144,7 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <label for="liberacion"></label>
                 <input type="file" name="liberacion">
-                <input type="submit" value="Subir documento">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_liberacion.php" method="POST">
@@ -152,7 +167,7 @@
                 <input type="hidden" name="No_control" value=" <?php echo $_GET['No_control']; ?>">
                 <label for="aviso"></label>
                 <input type="file" name="aviso">
-                <input type="submit" value="Subir documento">
+                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
             </form>
 
             <form action="php/visualizar_titulacion.php" method="POST">
