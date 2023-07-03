@@ -10,9 +10,7 @@
 </head>
 
 <body>
-
     <main>
-
         <div class="contenedor__todo">
             <div class="caja__trasera">
                 <div class="caja__trasera-login">
@@ -30,7 +28,6 @@
             </div>
 
             <div class="contenedor__login-register">
-
                 <form action="php/iniciar_sesion.docente.php" method="POST" class="formulario__login">
                     <h2>Docentes</h2>
                     <input type="text" placeholder="Usuario" name="usuario">

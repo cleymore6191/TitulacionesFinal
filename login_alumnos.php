@@ -10,9 +10,7 @@
 </head>
 
 <body>
-
     <main>
-
         <div class="contenedor__todo">
             <div class="caja__trasera">
                 <div class="caja__trasera-login">

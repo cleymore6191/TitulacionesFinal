@@ -24,7 +24,7 @@
             </div>
 
             <div class="Nota">
-                <p>Subir los documento en pdf</p>
+                <p>Subir todos los documento en pdf</p>
             </div>
             
             <div class="Solicitud">
@@ -48,7 +48,7 @@
             </div>
 
             <div class="Enviar">
-                <input type="submit" onclick="mostrarDocumentos">
+                <input type="submit" onclick="mostrarDocumentos()">
             </div>
 
         </form>

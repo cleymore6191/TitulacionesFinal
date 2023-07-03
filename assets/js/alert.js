@@ -3,7 +3,7 @@ function mostrarAlerta() {
 }
 
 function mostrarDatos() {
-    alert("Tus datos ya se guardaron ahora ya puedes abrir expediente");
+    alert("Tus datos ya se guardaron ahora ya puedes abrir tu expediente");
 }
 
 function mostrarDocumentos() {
@@ -12,4 +12,5 @@ function mostrarDocumentos() {
 
 function mostrarExpediente() {
     alert("El documento ya esta en la base de datos")
+    window.location.href = 'buscador_proceso.php';
 }

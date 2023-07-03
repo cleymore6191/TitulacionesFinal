@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos generales</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/estilo_generales.css">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 
         <div class='formulario'>
             <label for="asesor">Asesor</label>
-            <input type="text" name="asesor" id="asesor" placeholder="Escribe tu asesor de tus residencias">
+            <input type="text" name="asesor" id="asesor" placeholder="Escribe el asesor de tus residencias">
         </div>
 
         <p class="nota">
