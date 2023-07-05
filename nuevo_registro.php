@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos del alumno</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
 
-    <h3>Ingresar los datos del alumno que ya no siguieron su proceso de titulacion</h3>
+    <div class="container">
+        <img src="assets/images/Tecnologico.png" alt="LOGO" style="max-width: 200px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" alt="" style="float: right; max-width: 85px; height: auto;">
+    </div>
+
+    <h3 class="text">
+        Ingresar los datos del alumno que ya no siguieron su proceso de titulacion
+    </h3>
 
     <form action="php/nuevo_dato.php" method="POST">
     <div class="formulario">
@@ -47,7 +55,10 @@
             <input type="text" name="email" id="email" placeholder="Escribe tu correo institucional">
         </div>
 
-        <button type="submit" onclick="mostrarAlerta()">Guardar datos</button>
+        <div class="formulario">
+            <button type="submit" onclick="mostrarAlerta()">Guardar datos</button>  
+        </div>
+        
 
     </form>
 

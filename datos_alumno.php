@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos generales</title>
-    <link rel="stylesheet" href="assets/css/estilo_generales.css">
+    <link rel="stylesheet" href="assets/css/datos_alumno.css">
 </head>
 
 <body>
 
+    <div class="container">
+        <img src="assets/images/Tecnologico.png" alt="LOGO" style="max-width: 200px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" alt="" style="float: right; max-width: 85px; height: auto;">
+    </div>
+
     <h3 class="text">
-        Datos generales
+        Ingresa tus datos generales
     </h3>
 
     <form action="php/insertar_datos.php" method="POST">
@@ -34,7 +39,7 @@
         <div class="formulario">
             <label for="Carrera">Carrera</label>
             <select name="carrera" id="carrera">
-                <option value=""></option>
+                <option value="">Selecciona tu carrera</option>
                 <option value="ISC">ISC</option>
                 <option value="IME">IME</option>
                 <option value="IGE">IGE</option>
@@ -53,16 +58,16 @@
         </div>
 
         <div class='formulario'>
-            <label for="asesor">Asesor</label>
+            <label for="asesor">Asesor de las residencias</label>
             <input type="text" name="asesor" id="asesor" placeholder="Escribe el asesor de tus residencias">
         </div>
 
         <p class="nota">
-            Llena el formulario en caso de que estes trabajando
+            Llena el siguiente formulario en caso de que estes trabajando
         </p>
 
         <p class="nota">
-            en caso de que no trabajes llena los datos anteriores
+            En caso de que no trabajes ya click en Guardar datos 
         </p>
 
         <div class="formulario">
@@ -84,8 +89,10 @@
             <input type="text" name="cargo" id="cargo" placeholder="En que cargo te encuentras">
         </div>
 
-        <button type="submit" onclick="mostrarDatos()">Guardar datos</button>
-
+        <div class="formulario"> 
+            <button type="submit" onclick="mostrarDatos()">Guardar datos</button>
+        </div>
+        
     </form>
 
     <script src="assets/js/alert.js"></script>

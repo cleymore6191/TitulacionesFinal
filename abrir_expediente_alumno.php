@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrir expediente</title>
-    <link rel="stylesheet" href="assets/css/abrir.expediente.alumno.css">
+    <link rel="stylesheet" href="assets/css/Abrir_expediente.css">
 </head>
 
 <body>
+
+    <div class="container">
+        <img src="assets/images/Tecnologico.png" alt="LOGO" style="max-width: 200px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" alt="" style="float: right; max-width: 85px; height: auto;">
+    </div>
 
     <h3 class="text">
         Abrir proceso de titulacion

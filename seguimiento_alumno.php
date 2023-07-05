@@ -17,13 +17,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de tu titulacion</title>
-    <link rel="stylesheet" href="assets/css/seguimiento.alumno.css">
+    <link rel="stylesheet" href="assets/css/Seguimiento_alumno.css">
 </head>
 
 <body>
 
+    <div class="container">
+        <img src="assets/images/Tecnologico.png" style="max-width: 200px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" style="float: right; max-width: 85px; height: auto;">
+    </div>
+
     <h3 class="text">
-        Seguimiento de tu proceso de titulacion
+        Seguimiento del proceso de tu titulacion
         <?php echo $numero_control; ?>
     </h3>
 
@@ -104,10 +109,9 @@
                 </form>
             </div>
 
-            <div>
-                <button onclick="window.location.href='menu_alumno.php'">Atras</button>
-                <button onclick="window.location.href='login_alumnos.php'">Cerrar Session</button>
-            </div>
+            <form action="php/cerrar_session.php" method="POST">
+                <button type="submit">Cerrar Session</button>
+            </form>
         </div>
     
 

@@ -1,7 +1,15 @@
+body {
+    background-image: url(../images/FONDO_LOGIN.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .text {
     text-align: center;
-    margin: 40px 0;
     font-size: 30px;
+    color: white;
 }
 
 .contenedor {

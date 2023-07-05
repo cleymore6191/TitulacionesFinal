@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/login_docente_alumno.css">
 </head>
 
 <body>
+
+    <div class="container">
+        <img src="assets/images/Tecnologico.png" alt="" style="max-width: 150px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" alt="" style="float: right; max-width: 80px; height: auto;">
+    </div>
+
     <main>
         <div class="contenedor__todo">
             <div class="caja__trasera">

@@ -1,7 +1,14 @@
+body {
+    background-image: url(../images/FONDO_LOGIN.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .text {
     color: black;
     text-align: center;
-    margin: 40px 0;
     font-size: 30px;
 }
 
@@ -27,4 +34,7 @@ input[type="submit"] {
     width: 10%;
     padding: 10px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
