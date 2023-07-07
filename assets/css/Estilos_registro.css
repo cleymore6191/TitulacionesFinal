@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../images/FONDO_REGISTRO.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.formulario label {
+    color: #ffffff;
+}
+
+label {
+    text-align: center;
+}
+
+input[type="text"] {
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select[name="carrera"] {
+    text-align: center;
+    border: 2px solid #ccc;
+    margin: 15px 0;
+    width: 15%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 24px;
+    margin: 15px 0;
+    cursor: pointer;
+    width: 15%;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos del alumno</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/Estilos_registro.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     </h3>
 
     <form action="php/nuevo_dato.php" method="POST">
-    <div class="formulario">
+        <div class="formulario">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
         </div>
@@ -58,8 +58,7 @@
         <div class="formulario">
             <button type="submit" onclick="mostrarAlerta()">Guardar datos</button>  
         </div>
-        
-
+    
     </form>
 
     <script src="assets/js/alert.js"></script>

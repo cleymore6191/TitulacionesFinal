@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguimiento del proceso</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/Seguimiento_alumno.css">
 </head>
 <body>
+    
+    <div class="container">
+        <img src="assets/images/Tecnologico.png" style="max-width: 200px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" style="float: right; max-width: 85px; height: auto;">
+    </div>
+
 
     <div class="contenedor">
         <div style="text-align:center;">

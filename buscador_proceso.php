@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <h1 class="text-center text-light">Division de estudios profesionales</h1>
+        <h1 class="text-center text-light">Division de estudios profesionales <img src="assets/images/LOGO_TEC.jpeg" style="float: right; max-width: 85px; height: auto;"></h1>
         <h2 class="text-center text-light">Buscador <span class="backge badge-danger">de estudiantes</span></h2>
     </header>
 
@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="table-responsive">
-                    <table id="example" id="tablaOrigen" class="table table-striped table-bordered" style="width:100%">
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>No. de control</th>
@@ -53,7 +53,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($link->query("SELECT * FROM datos_alumno") as $row) { ?>
+                            <?php foreach ($link->query("SELECT * FROM datos_alumno") as $row){ ?>      
                                 <tr>
                                     <td><?php echo $row['No_control'] ?></td>
                                     <td><?php echo $row['Nombre'] ?></td>
@@ -63,7 +63,7 @@
                                     <td>
                                         <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
                                         <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
-                                        <button class="btn btn-outline-danger" onclick="moverFila(this)">Concluido</button>
+                                        <a href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger">Concluido</a>
                                     </td>
                                 </tr>
                             <?php }
@@ -84,7 +84,6 @@
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/tabla.js"></script>
     <script type="text/javascript" src="assets/js/detalleProcesos.js"></script>
-    <script type="text/javascript"src="assets/js/boton.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>

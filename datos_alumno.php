@@ -12,8 +12,8 @@
 <body>
 
     <div class="container">
-        <img src="assets/images/Tecnologico.png" alt="LOGO" style="max-width: 200px; height: auto;">
-        <img src="assets/images/LOGO_TEC.jpeg" alt="" style="float: right; max-width: 85px; height: auto;">
+        <img src="assets/images/Tecnologico.png" style="max-width: 200px; height: auto;">
+        <img src="assets/images/LOGO_TEC.jpeg" style="float: right; max-width: 85px; height: auto;">
     </div>
 
     <h3 class="text">

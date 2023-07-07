@@ -21,11 +21,15 @@
 <body>
 
     <header>
-        <h1 class="text-center text-light">Division de estudios profesionales</h1>
+        <h1 class="text-center text-light">Division de estudios profesionales <img src="assets/images/LOGO_TEC.jpeg" style="float: right; max-width: 85px; height: auto;"></h1>
         <h2 class="text-center text-light">Titulaciones<span class="backge badge-danger"> Concluidos</span></h2>
     </header>
 
     <div style="height:50px"></div>
+
+    <?php
+        $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
+    ?>
 
     <div class="container">
         <div class="row">
@@ -43,17 +47,20 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach ($link->query("SELECT * FROM datos_concluidos") as $row ){ ?>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo $row['No_control'] ?></td>
+                                <td><?php echo $row['Nombre'] ?></td>
+                                <td><?php echo $row['Apellido'] ?></td>
+                                <td><?php echo $row['Carrera'] ?></td>
+                                <td><?php echo $row['Asesor'] ?></td>
                                 <td>
                                     <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
                                     <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
                                 </td>
                             </tr>
+                            <?php }
+                            ?>
                         </tbody>
                     </table>
                 </div>
