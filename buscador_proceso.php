@@ -36,7 +36,7 @@
 
     <div class="container">
     <div>
-        <a href="nuevo_registro.php">Nuevo Registro</a>
+        <a href="nuevo_registro.php" >Nuevo Registro</a>
     </div>
         <div class="row">
             <div class="col-lg-12">
@@ -61,7 +61,7 @@
                                     <td><?php echo $row['Carrera'] ?></td>
                                     <td><?php echo $row['Asesor'] ?></td>
                                     <td>
-                                        <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
+                                        <button class="btn btn-info" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos Alumno</button>
                                         <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
                                         <a href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger">Concluido</a>
                                     </td>

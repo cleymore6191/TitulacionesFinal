@@ -17,7 +17,7 @@
     </div>
 
     <h3 class="text">
-        Division de estudios profesionales
+        Division de Estudios Profesionales
     </h3>
 
     <div class="contenedor">
@@ -31,31 +31,7 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="bubbles">
-            <span style="--1:11;"></span>
-            <span style="--1:12;"></span>
-            <span style="--1:24;"></span>
-            <span style="--1:10;"></span>
-            <span style="--1:14;"></span>
-            <span style="--1:23;"></span>
-            <span style="--1:18;"></span>
-            <span style="--1:16;"></span>
-            <span style="--1:19;"></span>
-            <span style="--1:20;"></span>
-            <span style="--1:22;"></span>
-            <span style="--1:25;"></span>
-            <span style="--1:18;"></span>
-            <span style="--1:21;"></span>
-            <span style="--1:15;"></span>
-            <span style="--1:13;"></span>
-            <span style="--1:26;"></span>
-            <span style="--1:17;"></span>
-            <span style="--1:13;"></span>
-            <span style="--1:28;"></span>
-        </div>
-    </div>
-
+    
 </body>
 
 </html>

@@ -27,7 +27,7 @@
                 <div class="caja__trasera-register">
                     <h3>¿Aun no tienes cuenta</h3>
                     <p>Registrate para que puedas iniciar sesion</p>
-                    <button id="btn__registrarse">Registrarse</button>
+                    <button id="btn__registrarse" >Registrarse</button>
                     <button onclick="window.location.href='login_docentes.php'">Docentes</button>
                 </div>
             </div>
@@ -44,12 +44,13 @@
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Numero de control" name="numero_control">
                     <input type="password" placeholder="Contraseña" name="contraseña">
-                    <button>Registrarse</button>
+                    <button onclick="mostrarRegistro();">Registrarse</button>
                 </form>
             </div>
         </div>
     </main>
     <script src="assets/js/login.js"></script>
+    <script src="assets/js/alert.js"></script>
 </body>
 
 </html>
