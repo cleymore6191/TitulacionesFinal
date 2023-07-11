@@ -14,8 +14,16 @@
          
         $_SESSION['numero_control'] = $numero_control;
         header("Location: ../menu_alumno.php");
-    }else{
+        exit();
         
+    }else{
+        echo '
+        <script>
+            alert("El número de control o la contraseña son incorrectos");
+            window.location = "../login_alumnos.php";
+        </script>
+        ';
+    exit();
     }
 
 ?>

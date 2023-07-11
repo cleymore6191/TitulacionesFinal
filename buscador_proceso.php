@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['usuario'])){
+        header("Location: login_docentes.php");
+        exit();
+    }
+
+    $usuario = $_SESSION['usuario'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +47,9 @@
 
     <div class="container">
     <div>
-        <a href="nuevo_registro.php" >Nuevo Registro</a>
+        <a href="nuevo_registro.php">Nuevo Registro</a>
+        <a href="menu_docente.php">Atras</a>
+        <a href="php/cerrar_session.php">Cerrar sesion</a>
     </div>
         <div class="row">
             <div class="col-lg-12">
@@ -63,7 +76,7 @@
                                     <td>
                                         <button class="btn btn-info" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos Alumno</button>
                                         <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
-                                        <a href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger">Concluido</a>
+                                        <a href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger" onclick="mostrarTitulacion()">Concluido</a>
                                     </td>
                                 </tr>
                             <?php }
@@ -84,6 +97,7 @@
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/tabla.js"></script>
     <script type="text/javascript" src="assets/js/detalleProcesos.js"></script>
+    <script src="assets/js/alert.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>

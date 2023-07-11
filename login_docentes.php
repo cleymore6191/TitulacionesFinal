@@ -47,11 +47,12 @@
                     <input type="text" placeholder="Usuario" name="usuario">
                     <input type="text" placeholder="Email" name="email">
                     <input type="password" placeholder="Contraseña" name="contraseña">
-                    <button>Registrarse</button>
+                    <button onclick="mostrarDocente();">Registrarse</button>
                 </form>
             </div>
         </div>
     </main>
+    <script src="assets/js/alert.js"></script>
     <script src="assets/js/login.js"></script>
 </body>
 

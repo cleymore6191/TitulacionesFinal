@@ -45,9 +45,9 @@
                 <form action="php/subir_firmas.php" method="POST" enctype="multipart/form-data">
                     <p>Formato de 3 firmas</p>
                     <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
-                    <label for="firmas"></label>
+                    <label for="firmas"></label> 
                     <input type="file" name="firmas">
-                    <input type="submit" value="Subir documento">
+                    <input type="submit" value="Subir documento" onclick="mostrarSubida()">
                 </form>
 
                 <form action="php/visualizar_firmas.php" method="POST">
@@ -62,7 +62,7 @@
                     <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
                     <label for="impresion"></label>
                     <input type="file" name="impresion">
-                    <input type="submit" value="Subir documento">
+                    <input type="submit" value="Subir documento" onclick="mostrarSubida()">
                 </form>
 
                 <form action="php/visualizar_autorizacion.php" method="POST">
@@ -77,7 +77,7 @@
                     <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                     <label for="liberacion"></label>
                     <input type="file" name="liberacion">
-                    <input type="submit" value="Subir documento">
+                    <input type="submit" value="Subir documento" onclick="mostrarSubida()">
                 </form>
 
                 <form action="php/visualizar_liberacion.php" method="POST">
@@ -92,7 +92,7 @@
                     <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                     <label for="inconveniencia"></label>
                     <input type="file" name="inconveniencia">
-                    <input type="submit" value="Subir documento">
+                    <input type="submit" value="Subir documento" onclick="mostrarSubida()">
                 </form>    
 
                 <form action="php/visualizar_inconveniencia.php" method="POST">
@@ -110,11 +110,11 @@
             </div>
 
             <form action="php/cerrar_session.php" method="POST">
-                <button type="submit">Cerrar Session</button>
+                <button type="submit">Cerrar Sesion</button>
             </form>
         </div>
     
-
+    <script src="assets/js/alert.js"></script>
     <script src="assets/js/imprimir.js"></script>
     <script src="assets/js/visualizar.js"></script>
 </body>

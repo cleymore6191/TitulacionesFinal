@@ -172,7 +172,7 @@
                 <input type="hidden" name="No_control" value=" <?php echo $_GET['No_control']; ?>">
                 <label for="aviso"></label>
                 <input type="file" name="aviso">
-                <input type="submit" value="Subir documento" onclick="mostrarExpediente()">
+                <input type="submit" value="Subir documento" onclick="mostrarAviso()">
             </form>
 
             <form action="php/visualizar_titulacion.php" method="POST">

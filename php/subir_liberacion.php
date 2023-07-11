@@ -18,6 +18,7 @@
 
     $ejecutar = mysqli_query($conexion, $query);
 
-    
+    header("location: ../menu_alumno.php");
+    exit();
 
 ?>

@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['usuario'])){
+        header("Location: login_docentes.php");
+        exit();
+    }
+
+    $usuario = $_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +26,9 @@
         <img src="assets/images/LOGO_TEC.jpeg" style="float: right; max-width: 85px; height: auto;">
     </div>
 
+    
     <h3 class="text">
-        Division de Estudios Profesionales
+        Division de Estudios Profesionales 
     </h3>
 
     <div class="contenedor">

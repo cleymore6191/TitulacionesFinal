@@ -18,7 +18,7 @@
     
     $ejecutar = mysqli_query($conexion, $query);
 
-    header("location: ../seguimiento_proceso.php");
+    header("location: ../buscador_proceso.php");
     exit();
 
 

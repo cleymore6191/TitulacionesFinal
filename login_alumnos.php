@@ -49,8 +49,8 @@
             </div>
         </div>
     </main>
-    <script src="assets/js/login.js"></script>
     <script src="assets/js/alert.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
