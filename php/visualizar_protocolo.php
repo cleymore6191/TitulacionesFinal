@@ -1,10 +1,10 @@
 <?php
 
-    include 'conexion_be.php';    
+    include 'conexion_be.php';
 
     $no_control = $_POST['No_control'];
 
-    $query = "SELECT Contenido FROM titulacion WHERE No_control = '$no_control'";
+    $query = "SELECT Contenido FROM subir_protocolo WHERE No_control = '$no_control'";
     $resultado = mysqli_query($conexion, $query);
 
     if($resultado && mysqli_num_rows($resultado) > 0){
@@ -13,9 +13,9 @@
         $contenido = $row['Contenido'];
 
         header("Content-type: application/pdf");
+    
         echo $contenido;
     }else{
-        echo "El aviso no se ha subido a la base de datos";
+        echo "Aviso de titulacion no subido o no se ha fijado fecha";
     }
-    
 ?>

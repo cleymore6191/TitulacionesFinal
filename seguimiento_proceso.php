@@ -166,16 +166,16 @@
             </form>
         </div>
 
-        <div class="Titulacion">
-            <form action="php/subir_titulacion.php" method="POST" enctype="multipart/form-data">
-                <p>Aviso de Titulacion</p>
-                <input type="hidden" name="No_control" value=" <?php echo $_GET['No_control']; ?>">
-                <label for="aviso"></label>
-                <input type="file" name="aviso">
+        <div class="Protocolo">
+            <form action="php/subir_protocolo.php" method="POST" enctype="multipart/form-data">
+                <p>Aviso de titulacion</p>
+                <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
+                <label for="protocolo"></label>
+                <input type="file" name="protocolo">
                 <input type="submit" value="Subir documento" onclick="mostrarAviso()">
             </form>
 
-            <form action="php/visualizar_titulacion.php" method="POST">
+            <form action="php/visualizar_protocolo.php" method="POST">
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <button id="visualizar-btn">Ver documento</button>
             </form>

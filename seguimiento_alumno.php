@@ -44,7 +44,7 @@
             <div class="Firmas">
                 <form action="php/subir_firmas.php" method="POST" enctype="multipart/form-data">
                     <p>Formato de 3 firmas</p>
-                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <input type="hidden" name="numero_control" value="<?php echo $numero_control ?>"> 
                     <label for="firmas"></label> 
                     <input type="file" name="firmas">
                     <input type="submit" value="Subir documento" onclick="mostrarSubida()">
@@ -59,7 +59,7 @@
             <div class="Autorizacion">
                 <form action="php/subir_impresion.php" method="POST" enctype="multipart/form-data">
                     <p>Autorizacion de impresion</p>
-                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>"> 
+                    <input type="hidden" name="numero_control" value="<?php echo $numero_control ?>"> 
                     <label for="impresion"></label>
                     <input type="file" name="impresion">
                     <input type="submit" value="Subir documento" onclick="mostrarSubida()">
@@ -74,7 +74,7 @@
             <div class="Liberacion">
                 <form action="php/subir_liberacion.php" method="POST" enctype="multipart/form-data">
                     <p>Liberacion de titulacion</p>
-                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
+                    <input type="hidden" name="numero_control" value="<?php echo $numero_control ?>">
                     <label for="liberacion"></label>
                     <input type="file" name="liberacion">
                     <input type="submit" value="Subir documento" onclick="mostrarSubida()">
@@ -89,7 +89,7 @@
             <div class="Inconveniencia">
                 <form action="php/subir_inconveniencia.php" method="POST" enctype="multipart/form-data">
                     <p>Hoja de no Inconveniencia y pago de titulacion</p>
-                    <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
+                    <input type="hidden" name="numero_control" value="<?php echo $numero_control ?>">
                     <label for="inconveniencia"></label>
                     <input type="file" name="inconveniencia">
                     <input type="submit" value="Subir documento" onclick="mostrarSubida()">
@@ -102,7 +102,7 @@
             </div>
 
             <div class="Fecha"> 
-                <form action="" method="POST">
+                <form action="php/visualizar_protocolo.php" method="POST">
                     <p>Fecha de titulacion</p>
                     <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                     <button id="visualizar-btn">Aviso de tu titulacion</button>
