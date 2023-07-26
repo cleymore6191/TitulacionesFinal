@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['usuario'])){
+        header("Location: login_docentes.php");
+        exit();
+    }
+
+    $usuario = $_SESSION['usuario'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +22,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!--CSS personalizado-->
     <link rel="stylesheet" href="assets/css/diseño.tabla.css">
+    <!--Estilos de botones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
     <!--datatables CSS basico-->
     <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css">
@@ -32,6 +46,10 @@
     ?>
 
     <div class="container">
+    <div>
+        <a class="custom-btn3" href="menu_docente.php" title="Menu Principal"><i class="bi bi-box-arrow-in-left"></i></a>
+        <a class="custom-btn3" href="php/cerrar_session.php" title="Cerrar Sesion"><i class="bi bi-person-x-fill"></i></a>
+    </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="table-responsive">
@@ -55,8 +73,8 @@
                                 <td><?php echo $row['Carrera'] ?></td>
                                 <td><?php echo $row['Asesor'] ?></td>
                                 <td>
-                                    <button class="btn btn-primary" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos generales</button>
-                                    <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
+                                    <button class="custom-btn" title="Ver Datos" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)"><i class="bi bi-file-person"></i></button>
+                                    <button class="custom-btn1" title="Ver Expediente" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)"><i class="bi bi-database"></i></button>
                                 </td>
                             </tr>
                             <?php }

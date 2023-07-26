@@ -48,8 +48,6 @@
             </script>
             ';
     }
-    
-    header("location: ../login_alumnos.php");
     exit();
 
 ?>

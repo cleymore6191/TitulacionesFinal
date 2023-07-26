@@ -47,7 +47,7 @@
                     <input type="text" placeholder="Usuario" name="usuario">
                     <input type="text" placeholder="Email" name="email">
                     <input type="password" placeholder="Contraseña" name="contraseña">
-                    <button onclick="mostrarDocente();">Registrarse</button>
+                    <button>Registrarse</button>
                 </form>
             </div>
         </div>

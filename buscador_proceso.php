@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!--CSS personalizado-->
     <link rel="stylesheet" href="assets/css/diseño.tabla.css">
+    <!--Estilos de botones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!--datatables CSS basico-->
     <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css">
@@ -47,9 +49,9 @@
 
     <div class="container">
     <div>
-        <a href="nuevo_registro.php">Nuevo Registro</a>
-        <a href="menu_docente.php">Atras</a>
-        <a href="php/cerrar_session.php">Cerrar sesion</a>
+        <a class="custom-btn3" href="nuevo_registro.php" title="Nuevo Registro"><i class="bi bi-cloud-arrow-up"></i></a>
+        <a class="custom-btn3" href="menu_docente.php" title="Menu principal"><i class="bi bi-box-arrow-in-left"></i></a>
+        <a class="custom-btn3" href="php/cerrar_session.php" title="Cerrar Sesion"><i class="bi bi-person-x-fill"></i></a>
     </div>
         <div class="row">
             <div class="col-lg-12">
@@ -74,9 +76,9 @@
                                     <td><?php echo $row['Carrera'] ?></td>
                                     <td><?php echo $row['Asesor'] ?></td>
                                     <td>
-                                        <button class="btn btn-info" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)">Datos Alumno</button>
-                                        <button class="btn btn-success" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)">Expediente</button>
-                                        <a href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger" onclick="mostrarTitulacion()">Concluido</a>
+                                        <button class="custom-btn" title="Ver Datos" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)"><i class="bi bi-file-person"></i></button>
+                                        <button class="custom-btn1" title="Ver expediente" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)"><i class="bi bi-database"></i></button>
+                                        <a class="custom-btn2" title="Pasar a concluido" href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger" onclick="mostrarTitulacion()"><i class="bi bi-upload"></i></a>
                                     </td>
                                 </tr>
                             <?php }

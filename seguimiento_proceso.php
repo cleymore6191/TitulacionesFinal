@@ -179,7 +179,6 @@
                 <input type="hidden" name="No_control" value="<?php echo $_GET['No_control']; ?>">
                 <button id="visualizar-btn">Ver documento</button>
             </form>
-
         </div>
 
     </div>

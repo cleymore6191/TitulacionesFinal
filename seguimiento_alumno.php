@@ -102,7 +102,7 @@
             </div>
 
             <div class="Fecha"> 
-                <form action="php/visualizar_titulacion.php" method="POST">
+                <form action="" method="POST">
                     <p>Fecha de titulacion</p>
                     <input type="hidden" name="No_control" value="<?php echo $numero_control ?>">
                     <button id="visualizar-btn">Aviso de tu titulacion</button>

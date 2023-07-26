@@ -44,7 +44,7 @@
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Numero de control" name="numero_control">
                     <input type="password" placeholder="Contraseña" name="contraseña">
-                    <button onclick="mostrarRegistro();">Registrarse</button>
+                    <button>Registrarse</button>
                 </form>
             </div>
         </div>

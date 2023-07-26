@@ -12,7 +12,7 @@
 
     if(mysqli_num_rows($resultado) == 1) {
 
-        $_SESSION['usuario'] = $usuario; // Corregido: usar el operador de asignación "=" en lugar de "=="
+        $_SESSION['usuario'] = $usuario;
         header("Location: ../menu_docente.php");
         exit();
         
