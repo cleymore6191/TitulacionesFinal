@@ -7,6 +7,23 @@
     $email = $_POST['email'];
     $contraseña = $_POST['contraseña'];
 
+    $query_contar_usuarios = "SELECT COUNT(*) as Total_usuarios FROM login_docente";
+    $resultado_contar_usuarios = mysqli_query($conexion, $query_contar_usuarios);
+    $fila_contar_usuarios = mysqli_fetch_assoc($resultado_contar_usuarios);
+    $total_usuarios = $fila_contar_usuarios['Total_usuarios'];
+
+    $limite_usuarios = 5; // Establecer el límite máximo de usuarios
+
+    if ($total_usuarios >= $limite_usuarios) {
+        echo '
+            <script>
+                alert("Se ha alcanzado el límite máximo de usuarios registrados. No es posible realizar nuevos registros en este momento.");
+                window.location = "../login_docentes.php";
+            </script>
+        ';
+        exit();
+    }
+
     if(empty($usuario) || empty($contraseña)){
         echo '
         <script>
