@@ -35,7 +35,7 @@
 
             <div class="contenedor__login-register">
                 <form action="php/iniciar_sesion.docente.php" method="POST" class="formulario__login">
-                    <h2>Docentes</h2>
+                    <h2>Jefe de Division</h2>
                     <input type="text" placeholder="Usuario" name="usuario">
                     <input type="password" placeholder="Contraseña" name="contraseña">
                     <button onclick="window.location.href='menu_docente.php'">Entrar</button>

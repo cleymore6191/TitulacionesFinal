@@ -15,7 +15,7 @@
     </div>
 
     <h3 class="text">
-        Ingresar los datos del alumno que ya no siguieron su proceso de titulacion
+        Ingresar los datos del alumno que estan en proceso de titulacion
     </h3>
 
     <form action="php/nuevo_dato.php" method="POST">
