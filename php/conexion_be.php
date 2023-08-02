@@ -1,6 +1,6 @@
 <?php
 
-    $conexion = mysqli_connect("localhost", "root", "", "titulaciones");
+    $conexion = mysqli_connect("localhost", "root", "", "Titulaciones");
 
    /* if($conexion){
         echo 'Conectado exitosamente a la base de datos';
