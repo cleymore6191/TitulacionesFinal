@@ -42,7 +42,7 @@
     <div style="height:50px"></div>
 
     <?php
-        $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
+        $link = new PDO("mysql:host=fdb1028.awardspace.net;dbname=4353774_titulaciones", "4353774_titulaciones", "Fernando6191)",);
     ?>
 
     <div class="container">

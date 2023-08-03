@@ -44,7 +44,7 @@
     <!--Tabla donde apareceran los alumnos registrados-->
 
     <?php
-    $link = new PDO("mysql:host=localhost;dbname=titulaciones", "root", "",);
+    $link = new PDO("mysql:host=fdb1028.awardspace.net;dbname=4353774_titulaciones", "4353774_titulaciones", "Fernando6191)",);
     ?>
 
     <div class="container">
@@ -78,7 +78,7 @@
                                     <td>
                                         <button class="custom-btn" title="Ver Datos" onclick="detailByStudent(<?php echo htmlspecialchars  (json_encode ($row))?>)"><i class="bi bi-file-person"></i></button>
                                         <button class="custom-btn1" title="Ver expediente" onclick="goToSeguimientoProceso(<?php echo $row['No_control'] ?>)"><i class="bi bi-database"></i></button>
-                                        <a class="custom-btn2" title="Pasar a concluido" href="php/Mover_fila.php ?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger" onclick="mostrarTitulacion()"><i class="bi bi-upload"></i></a>
+                                        <a class="custom-btn2" title="Pasar a concluido" href="php/Mover_fila.php?no_control=<?php echo $row['No_control'] ?>" class="btn btn-outline-danger" onclick="mostrarTitulacion()"><i class="bi bi-upload"></i></a>
                                     </td>
                                 </tr>
                             <?php }

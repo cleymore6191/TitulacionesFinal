@@ -38,6 +38,6 @@
     // Cerrar la conexión
     $conexion->close();
 
-    header('Location: ../buscador_proceso.php');
+    header("Location: ../menu_docente.php");
     exit;
 ?>

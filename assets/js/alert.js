@@ -31,5 +31,5 @@ function mostrarDocente() {
 }
 
 function mostrarTitulacion() {
-    alert("Alumno titulado exitosamentes");
+    alert("Alumno titulado exitosamente");
 }
